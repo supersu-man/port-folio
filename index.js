@@ -5,8 +5,8 @@ const sunIcon = document.getElementById('sun-icon')
 const moonIcon = document.getElementById('moon-icon')
 const muteIcon = document.getElementById('mute-icon')
 const unmuteIcon = document.getElementById('unmute-icon')
+let isPlaying = false
 
-const player = document.getElementById('audio')
 
 const toggleTheme = () => {
     if (localStorage.getItem('dark-theme')) {
@@ -23,14 +23,17 @@ const toggleTheme = () => {
 }
 
 const toggleMusic = () => {
-    if (player.muted) {
-        player.muted = false
-        unmuteIcon.classList.remove('d-none')
-        muteIcon.classList.add('d-none')
-    } else {
-        player.muted = true
-        muteIcon.classList.remove('d-none')
+    const player = document.getElementById('audio')
+    if (isPlaying) {
+        player.pause()
+        isPlaying = false
         unmuteIcon.classList.add('d-none')
+        muteIcon.classList.remove('d-none')
+    } else {
+        isPlaying = true
+        player.play()
+        muteIcon.classList.add('d-none')
+        unmuteIcon.classList.remove('d-none')
     }
 }
 
