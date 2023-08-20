@@ -1,0 +1,39 @@
+@font-face {
+	font-family: Rubik;
+	src: url(../assets/Rubik.ttf);
+}
+
+.light-theme {
+    --background: #F1F0E8;
+    --primary: #27374D;
+    --secondary: #ADC4CE;
+}
+
+.dark-theme {
+    --background: #27374D;
+    --primary: #DDE6ED;
+    --secondary: #9DB2BF;
+}
+
+.background {
+    background-color: var(--background);
+}
+
+.primary {
+    color: var(--primary);
+}
+
+.secondary {
+    color: var(--secondary);
+}
+
+body {
+    background-color: var(--background);
+    color: var(--primary);
+    font-family: Rubik;
+}
+
+.btn {
+    background-color: var(--primary) !important;
+    color: var(--background) !important;
+}
