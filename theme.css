@@ -1,6 +1,6 @@
 @font-face {
 	font-family: Rubik;
-	src: url(../assets/Rubik.ttf);
+	src: url(/assets/Rubik.ttf);
 }
 
 .light-theme {

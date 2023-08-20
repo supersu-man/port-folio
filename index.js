@@ -7,6 +7,12 @@ const muteIcon = document.getElementById('mute-icon')
 const unmuteIcon = document.getElementById('unmute-icon')
 let isPlaying = false
 
+if(localStorage.getItem('dark-theme')) {
+    document.body.classList.replace('light-theme', 'dark-theme')
+    moonIcon.classList.remove('d-none')
+    sunIcon.classList.add('d-none')
+}
+
 
 const toggleTheme = () => {
     if (localStorage.getItem('dark-theme')) {
