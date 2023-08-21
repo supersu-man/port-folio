@@ -52,6 +52,6 @@ const openWindow = (value) => {
         break
         case 'contact': window.open("https://mail.google.com/mail/?view=cm&source=mailto&to=sumanthpera444@gmail.com")
         break
-        case 'resume': window.open("../assets/resume.pdf")
+        case 'resume': window.open("https://resume.sumanth.dev/")
     }
 }
