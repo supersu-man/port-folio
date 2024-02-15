@@ -1,0 +1,15 @@
+html,
+body {
+    background-color: #1E1E1E;
+    color: white;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.carousel-item {
+    transition: 1s !important;
+}
