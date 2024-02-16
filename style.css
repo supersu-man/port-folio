@@ -1,8 +1,14 @@
+@font-face {
+	font-family: fredoka;
+	src: url(assets/fredoka.ttf);
+}
+
 html,
 body {
     background-color: #1E1E1E;
     color: white;
     height: 100%;
+    font-family: fredoka !important;
 }
 
 a {
