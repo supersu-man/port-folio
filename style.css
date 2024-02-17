@@ -19,3 +19,7 @@ a {
 .carousel-item {
     transition: 1s !important;
 }
+
+.carousel-item, .carousel-inner, .card {
+    border-radius: 20px;
+}

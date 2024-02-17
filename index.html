@@ -2,135 +2,71 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sumanth</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sumanth</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="container">
 
-    <nav class="row px-4 py-3 fixed-top fw-bold">
-        <a class="col-auto px-1 small" href="/">Home</a>
-        <a class="col-auto px-1 small" href="#about">About</a>
-        <a class="col-auto px-1 small" href="#projects">Projects</a>
-        <a class="col-auto px-1 small" href="https://resume.sumanth.dev/">Resume</a>
-        <a class="col ps-1 small" href="https://cycling.sumanth.dev/">Cycling</a>
+  <nav class="row px-4 py-3 fixed-top fw-bold">
+    <a class="col-auto px-1 small" href="/">Home</a>
+    <a class="col-auto px-1 small" href="#about">About</a>
+    <a class="col-auto px-1 small" href="#projects">Projects</a>
+    <a id="resume" class="col-auto px-1 small">Resume</a>
+    <a id="cycling" class="col ps-1 small">Cycling</a>
 
-        <a class="col-auto px-1" href="https://dev.to/supersuman"><i class="bi bi-pencil-square"></i></a>
-        <a class="col-auto px-1" href="mailto:sumanthpera444@gmail.com"><i class="bi-envelope-fill"></i></a>
-        <a class="col-auto px-1" href="https://github.com/supersu-man"><i class="bi-github"></i></a>
-        <a class="col-auto px-1" href="https://www.linkedin.com/in/sumanthperambuduri"><i class="bi-linkedin"></i></a>
-    </nav>
+    <a class="col-auto px-1" id="writings"><i class="bi bi-pencil-square"></i></a>
+    <a class="col-auto px-1" id="email"><i class="bi-envelope-fill"></i></a>
+    <a class="col-auto px-1" id="github"><i class="bi-github"></i></a>
+    <a class="col-auto px-1" id="linkedin"><i class="bi-linkedin"></i></a>
+  </nav>
 
-    <div class="row text-center py-3 h-100 align-items-center">
-        <div class="col-12">
-            <div class="display-2" style="font-weight: 400;">Hi there, I'm Sumanth</div>
-            <div>I make software</div>
-            <img class="img-fluid pt-5" src="https://ghchart.rshah.org/supersu-man"/>
-            <div class="carousel slide carousel-fade pt-3" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">2000+ contributions on GitHub</div>
-                    <div class="carousel-item">6-Stars on HackerRank (Problem Solving)</div>
-                    <div class="carousel-item">1000+ downloads on Google Play Store</div>
-                </div>
-            </div>
-        </div>
+  <div class="row text-center py-3 h-100 align-items-center">
+    <div class="col-12">
+      <div id="title" class="display-2 fw-medium"></div>
+      <div id="subtitle"></div>
+      <img id="github" class="img-fluid pt-5" src="https://ghchart.rshah.org/supersu-man" />
+      <div class="carousel slide carousel-fade pt-3" data-bs-ride="carousel">
+        <div id="carousel" class="carousel-inner"></div>
+      </div>
     </div>
+  </div>
 
-    <div class="row py-3" id="about">
-        <div class="col-12 fs-1">about me</div>
-        <div class="col-12 py-3">
-            I'm a 22 Year old skilled developer, 2023 CSE graduate from GITAM, Hyd, with a passion for creating
-            full-stack web application and Android native apps. I have an active presence on GitHub, where I share my
-            code and contribute to various projects.
-        </div>
-        <div class="col-12">I work with technologies like:</div>
-        <div class="col-auto">Android Studio</div>
-        <div class="col-auto">Kotlin</div>
-        <div class="col-auto">Electron</div>
-        <div class="col-auto">Typescript</div>
-        <div class="col-auto">Python</div>
-        <div class="col-auto">Socket.io</div>
-        <div class="col-auto">Java</div>
-        <div class="col-auto">Angular</div>
-        <div class="col-auto">Bootstrap</div>
-        <div class="col-auto">GitHub Actions</div>
-        <div class="col-auto">MySQL</div>
-        <div class="col-auto">Docker</div>
-        <div class="col-12 py-3">Outside of work I am intersted in Gaming, Singing, Sports and Science</div>
+  <div class="row py-3" id="about">
+    <div class="col-12 fs-1">about me</div>
+    <div class="col-12 py-3" id="aboutme"></div>
+    <div class="col-12">I work with technologies like:</div>
+    <div class="col-12">
+      <div class="row" id="skills"></div>
     </div>
+    <div class="col-12 py-3" id="otherInterests"></div>
+  </div>
 
-    <div class="row py-3" id="projects">
-        <div class="col-12 fs-1">projects</div>
-        <div id="carouselCaptions" class="carousel carousel-dark slide py-3" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner" style="border-radius: 20px;">
-              <div class="carousel-item active text-center" style="background-color: #F1F2F4; border-radius: 20px;">
-                <img height="400" src="/assets/sally.svg" class="d-block w-100 px-5 pb-5">
-                <div class="carousel-caption">
-                  <h5>Sally</h5>
-                  <p>Sally is your trusty companion for managing trip expenses.</p>
-                  <div>
-                    <a class="col-auto px-1 text-dark" href="https://github.com/supersu-man/sally"><i class="bi-github"></i></a>
-                    <a class="col-auto px-1 text-dark" href="https://sally.sumanth.dev"><i class="bi-box-arrow-up-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item text-center" style="background-color: #8781BD; border-radius: 20px;" >
-                <img height="400" src="/assets/macronium.svg" class="d-block w-100 px-5 pb-5">
-                <div class="carousel-caption">
-                  <h5>Macronium</h5>
-                  <p>Control your PC using Android.</p>
-                  <div>
-                    <a class="col-auto px-1 text-dark" href="https://github.com/supersu-man/macronium-android"><i class="bi-github"></i></a>
-                    <a class="col-auto px-1 text-dark" href="https://sumanth.dev/macronium"><i class="bi-box-arrow-up-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item text-center" style="background-color: #BA5B5B; border-radius: 20px;">
-                <img height="400" src="/assets/gitamite.svg" class="d-block w-100 pt-5" style="padding-bottom: 120px;">
-                <div class="carousel-caption">
-                  <h5>Gitamite</h5>
-                  <p>Student app to check timetable, grades, notices and a lot more.</p>
-                  <a class="col-auto px-1 text-dark" href="https://play.google.com/store/apps/details?id=com.supersuman.gitamite"><i class="bi-box-arrow-up-right"></i></a>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-4">
-          <div class="card text-bg-dark" style="border-radius: 20px;">
-            <div class="card-body">
-              <div class="text-end">
-                <a class="col-auto px-1" href="https://github.com/supersu-man/spotify-playlist-downloader"><i class="bi-github"></i></a>
-              </div>
-              <h5 class="card-title">Spotify Playlist Downloader</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <div>Kotlin</div>
-            </div>
-          </div>
-        </div>
+  <div class="row py-3" id="projects">
+    <div class="col-12 fs-1">projects</div>
+    <div id="carouselCaptions" class="carousel carousel-dark slide py-3" data-bs-ride="carousel">
+      <div class="carousel-indicators" id="indicators"></div>
+      <div class="carousel-inner" id="myprojects"></div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
+  </div>
 
-    <script src="/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="/script.js" type="text/javascript"></script>
 </body>
 
 </html>
