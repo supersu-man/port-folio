@@ -26,3 +26,7 @@ html, body {
     border: none;
     background: rgb(28, 46, 68) !important;
 }
+
+nav {
+    background-color: rgb(32, 48, 61, 0.8);
+}
