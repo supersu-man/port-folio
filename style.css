@@ -22,7 +22,7 @@ a {
     border-radius: 20px;
 }
 
-body {
+html, body {
     background: linear-gradient(to top, rgb(7, 24, 46) 0%, rgb(32, 48, 61) 100%);
     background-attachment: fixed;
     color: white;
