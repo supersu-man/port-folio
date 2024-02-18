@@ -3,12 +3,6 @@
 	src: url(assets/fredoka.ttf);
 }
 
-html,
-body {
-    height: 100vh;
-    font-family: fredoka !important;
-}
-
 a {
     text-decoration: none;
     color: white;
@@ -23,8 +17,8 @@ a {
 }
 
 html, body {
+    font-family: fredoka !important;
     background: linear-gradient(to top, rgb(7, 24, 46) 0%, rgb(32, 48, 61) 100%);
-    background-attachment: fixed;
     color: white;
 }
 

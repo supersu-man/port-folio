@@ -48,7 +48,7 @@ readTextFile("/data.json", (text) => {
     })
     data.projects.forEach((project) => {
         document.getElementById('projects').innerHTML += `
-            <div class="col-12 col-sm-6 col-lg-4 p-2    ">
+            <div class="col-12 col-sm-6 col-lg-4 py-2    ">
                 <div class="card text-bg-dark h-100">
                     <div class="d-flex flex-column card-body">
                         <div class="text-end">
